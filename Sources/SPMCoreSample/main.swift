@@ -13,17 +13,20 @@ open class  MyDataPoint: DataPoint {
 
     public required init(credentials: Credentials) {
         super.init(credentials: credentials)
-        self._loadCollections()
     }
-    override open func integrateResponse<T>(_ response: Response<T>) where T : Decodable, T : Encodable {
+
+    override open func integrateResponse<T>(_ response: Response<T>){
     }
-    private func _loadCollections() {
-    }
+
  }
 
+// Use mongo default
+MODELS_PRIMARY_KEY = Model.ModelCodingKeys._id
 
-// Create a data Data Point with specific Credentials.
+
 let credentials = Credentials(username: "NoBody", password: "NoBody")
+
+// Create a data Data Point with specific initial Credentials.
 let dataPoint = MyDataPoint(credentials: credentials)
 dataPoint.authenticationMethod = .basicHTTPAuth
 dataPoint.scheme = Schemes.https
