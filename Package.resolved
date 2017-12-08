@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BartlebysCore",
+        "repositoryURL": "https://github.com/Bartlebys/BartlebysCore",
+        "state": {
+          "branch": null,
+          "revision": "b3acb02d590465a8ffa16d0732293130dbddf49a",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
